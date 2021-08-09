@@ -69,4 +69,7 @@ p {
   #button {
     box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
   }
+  p {
+    width: 60vw;
+  }
 }
