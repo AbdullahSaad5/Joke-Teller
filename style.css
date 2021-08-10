@@ -53,13 +53,17 @@ body {
 }
 
 p {
-  width: 20vw;
+  width: 30vw;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   margin-top: 20px;
-  color: white;
+  color: black;
   font-weight: bold;
   text-align: justify;
+
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 1.5rem 2.5rem;
+  border-radius: 10px;
 }
 @media screen and (max-width: 1000px) {
   .container {

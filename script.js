@@ -107,8 +107,6 @@ const VoiceRSS = {
 };
 
 function getTextToSpeech(joke) {
-  jokeParagraph.innerHTML = joke;
-  jokeParagraph.hidden = false;
   VoiceRSS.speech({
     key: "97172ab2073b411f9d250a37f7957585",
     src: joke,
@@ -134,6 +132,7 @@ async function getJokes() {
     } else {
       joke = json.joke;
     }
+    jokeParagraph.innerHTML = joke;
     getTextToSpeech(joke);
   } catch (e) {
     console.log(e);
@@ -144,4 +143,8 @@ button.addEventListener("click", getJokes);
 audioElement.addEventListener("ended", () => {
   button.disabled = false;
   jokeParagraph.hidden = true;
+});
+
+audioElement.addEventListener("loadeddata", () => {
+  jokeParagraph.hidden = false;
 });
