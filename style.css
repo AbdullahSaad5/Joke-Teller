@@ -59,7 +59,7 @@ p {
   margin-top: 20px;
   color: black;
   font-weight: bold;
-  text-align: justify;
+  /* text-align: justify; */
 
   background-color: rgba(245, 245, 245, 0.8);
   padding: 1.5rem 2.5rem;
